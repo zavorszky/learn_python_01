@@ -1,4 +1,4 @@
-# W3Scool - Python tTutorial
+# W3Scool - Python Tutorial
 
 A **W3Scool** ingyenes tanfolyamát kezdtem el.\
 A pédák/feladatok közül a számomra leg érdekesebbeket,
