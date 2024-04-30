@@ -5,23 +5,23 @@
 print("** 1 **")
 
 
-class Cars:
+class Car:
     color = "piros"
 
 
-mycar = Cars()
+mycar = Car()
 print(f"A kocsim szine: {mycar.color}")
 
 print("\n** 2 **")
 
 
-class Person:
+class Person2:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
 
-istvan = Person("István", 65)
+istvan = Person2("István", 65)
 
 print(f"Az 1. személy neve: {istvan.name}, kora: {istvan.age}")
 
@@ -30,7 +30,7 @@ print(f"Az 1. személy neve: {istvan.name}, kora: {istvan.age}")
 print("\n** 3 **")
 
 
-class Person2:
+class Person3:
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -39,5 +39,39 @@ class Person2:
         return f"{self.name} ({self.age})"
 
 
-peter = Person2("Péter", 61)
+peter = Person3("Péter", 61)
 print(f"A 2. személy neve: {peter.name}, kora: {peter.age}")
+
+
+print("\n** 4.a **")
+
+
+class Person4a:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def print_full_name(self):
+        print(f"{self.last_name} {self.first_name}")
+
+
+zi = Person4a("István", "Závorszky")
+zi.print_full_name()
+
+# A "self" helyett bármilyen változó/paraméret/argument név megadható
+# csak konzekvensen kell használni.
+# Pl. self => ci
+print("\n** 4.b **")
+
+
+class Person4b:
+    def __init__(ci, first_name, last_name):
+        ci.first_name = first_name
+        ci.last_name = last_name
+
+    def print_full_name(ci):
+        print(f"{ci.last_name} {ci.first_name}")
+
+
+zi = Person4b("István", "Závorszky")
+zi.print_full_name()
