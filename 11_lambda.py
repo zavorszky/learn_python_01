@@ -1,5 +1,5 @@
 # Project: 01
-# File:    10_lambda.py
+# File:    11_lambda.py
 # Author:  zavorszky@yahoo.com
 
 # Nekem úgy tűnik ez egy olyan lehetőség, mint a JavaScript-be az,
