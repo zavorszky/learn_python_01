@@ -1,0 +1,3 @@
+Hello! Welcome to 21_readFile_original.txt
+This file is for testing purposes.
+Good Luck!
